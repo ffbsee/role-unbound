@@ -19,8 +19,7 @@
     - 'files/snippets/*.conf'
 
 - name: Copy main unbound configuration
-  copy:
-    src: 'unbound.conf'
+  template:
     dest: '/etc/unbound/unbound.conf'
     owner: root
     group: root
