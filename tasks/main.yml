@@ -20,6 +20,7 @@
 
 - name: Copy main unbound configuration
   template:
+    src: 'files/unbound.conf'
     dest: '/etc/unbound/unbound.conf'
     owner: root
     group: root
